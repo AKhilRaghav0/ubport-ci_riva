@@ -18,7 +18,7 @@ jobs:
 
     env:
       VENDOR: xiaomi
-      DEVICE: riva
+      DEVICE: rolex
       ANDROID_ROOT: /home/runner/work/halium/
 
     steps:
@@ -70,22 +70,22 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         name: hybris-boot image
-        path: /home/runner/work/halium/out/target/product/riva/hybris-boot.img
+        path: /home/runner/work/halium/out/target/product/rolex/hybris-boot.img
 
     - name : Upload boot image
       uses: actions/upload-artifact@master
       with:
         name: halium-boot image
-        path: /home/runner/work/halium/out/target/product/riva/halium-boot.img
+        path: /home/runner/work/halium/out/target/product/rolex/halium-boot.img
 
     - name : Upload recovery image
       uses: actions/upload-artifact@master
       with:
         name: Recovery image
-        path: /home/runner/work/halium/out/target/product/riva/recovery.img
+        path: /home/runner/work/halium/out/target/product/rolex/recovery.img
 
     - name : Upload system image
       uses: actions/upload-artifact@master
       with:
         name: System image
-        path: /home/runner/work/halium/out/target/product/riva/system.img
+        path: /home/runner/work/halium/out/target/product/rolex/system.img
