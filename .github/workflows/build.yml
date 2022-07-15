@@ -1,5 +1,10 @@
 name: Build System Image
 
+on:
+  workflow_dispatch:
+  push:
+    tags:
+    - 'v*' #
 on: 
   push:
     branches:
